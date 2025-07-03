@@ -156,10 +156,6 @@ Developed by Team 9!
 With ❤️ for creative design & user experience.
 
 ---
-
-
-Here's the **entire line-by-line explanation of your project files** formatted in **Markdown** — copy-paste ready into your `README.md` or as a standalone `CODEBREAKDOWN.md`.
-
 ---
 
 ````markdown
