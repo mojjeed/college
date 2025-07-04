@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Greeting Card Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h2>Customize Your Card</h2>
+            <label>Message:<br>
+                <textarea id="card-message" rows="4" placeholder="Type your greeting..."></textarea>
+            </label>
+            <br>
+            <label>Card Width (px):
+                <input type="number" id="card-width" min="200" max="1000" value="400">
+            </label>
+            <label>Card Height (px):
+                <input type="number" id="card-height" min="200" max="1000" value="250">
+            </label>
+            <br>
+            <label>Or upload your own background:
+                <input type="file" id="background-upload" accept="image/*" style="display:none;">
+                <label for="background-upload" class="upload-icon-label" title="Upload background">
+                    <svg class="upload-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </label>
+            </label>
+            <br>
+            <button id="download-btn" type="button">Download Card</button>
+        </div>
+        <div class="preview-section">
+            <h2>Live Preview</h2>
+            <div id="card-preview" class="card-preview">
+                <span id="preview-message"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="transition.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</body>
+</html> 
